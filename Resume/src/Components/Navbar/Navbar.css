@@ -1,0 +1,122 @@
+/* Navbar.css */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #00bcd4, #007b8b);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  animation: slideInTop 0.8s ease-in-out;
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === LOGO TEXT === */
+.logo-text {
+  font-size: 1.9rem;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  animation: pulseLogo 2s infinite ease-in-out;
+}
+
+.logo-text .ai {
+  background: linear-gradient(90deg, #ffffff, #c9f0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.logo-text .resume,
+.logo-text .builder {
+  color: #f0f0f0;
+  letter-spacing: 0.5px;
+  transition: color 0.4s;
+}
+
+@keyframes pulseLogo {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* === NAV LIST === */
+.listing_pnl {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.listing_pnl li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  position: relative;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.listing_pnl li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, #ffffff, #aee5f7);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.listing_pnl li a:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.listing_pnl li a:hover::after {
+  width: 100%;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .listing_pnl {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .listing_pnl li a {
+    font-size: 1rem;
+  }
+}
+

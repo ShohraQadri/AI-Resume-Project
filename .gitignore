@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+Resume/node_modules/
+Server/node_modules/
+
+# build outputs
+dist/
+build/
+out/
+Resume/dist/
+Resume/build/
+Server/dist/
+Server/build/
+
+# system files
+.DS_Store
+Thumbs.db
+
+# env/secrets
+.env
+.env.local
+.env.*
+*.local
+
+# misc tools
+.vite/
+.vercel/
+.netlify/

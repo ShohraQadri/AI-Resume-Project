@@ -1,0 +1,217 @@
+/* -------------------- HOME CONTAINER -------------------- */
+.home-container {
+    font-family: "Segoe UI", sans-serif;
+    padding: 30px;
+    color: #333;
+  }
+  
+  /* -------------------- HERO SECTION -------------------- */
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 40px;
+    background: linear-gradient(90deg, #00bcd4, #007b8b);
+    color: white;
+    border-radius: 15px;
+    flex-wrap: wrap; /* for mobile responsiveness */
+  }
+  
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-text h1 span {
+    background: #007b8b;
+    padding: 4px 12px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  
+  .hero-text .quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+  }
+  
+  .cta-btn {
+    background-color: white;
+    color: #007b8b;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e0f7fa;
+    transform: scale(1.05);
+  }
+  
+  .hero-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    animation: floatImage 3s ease-in-out infinite;
+  }
+  
+  @keyframes floatImage {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* -------------------- FEATURES SECTION -------------------- */
+  .features-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+  
+  .features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #007b8b;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .feature-card:hover .icon {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+    color: #007b8b;
+  }
+  
+.feature-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #00bcd4;
+  display: block;
+  animation: popUp 0.5s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+  
+  .feature-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .feature-card p {
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  @keyframes popUp {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* -------------------- HOW IT WORKS SECTION -------------------- */
+ /* 🧩 HOW IT WORKS SECTION */
+.how-it-works {
+    padding: 60px 20px;
+    background: #eef9f9;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    color: #007b8b;
+    margin-bottom: 30px;
+  }
+  
+  .steps-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .step-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .step-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .step-card .icon {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 15px;
+    animation: popUp 0.4s ease;
+    display: block;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .step-card:hover .icon {
+    color: #007b8b;
+    transform: scale(1.2);
+  }
+  
+  .step-card h4 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .step-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
